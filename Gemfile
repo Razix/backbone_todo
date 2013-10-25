@@ -32,6 +32,15 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'haml'
+gem 'haml-rails'
+
+group :development do
+  gem 'quiet_assets'
+end
+
+gem 'backbone-on-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
