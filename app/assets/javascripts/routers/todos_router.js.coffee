@@ -4,7 +4,7 @@ class MyBackboneTodo.Routers.Todos extends Backbone.Router
 
   initialize: ->
     @collection = new MyBackboneTodo.Collections.Todos()
-    @collection.fetch({reset: true})
+    @collection.fetch()
 
   index: ->
     view = new MyBackboneTodo.Views.TodosIndex(collection: @collection)
